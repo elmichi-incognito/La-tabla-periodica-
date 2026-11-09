@@ -1,0 +1,274 @@
+body {
+    background-color: rgb(57, 51, 78);
+    color: rgb(45, 26, 54);
+    text-align: center;
+    font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+}
+.title{
+    font-size: 35px;
+}
+img,
+.tabla > div > div {
+    transition: transform 200ms ease, filter 200ms ease;
+}
+
+img:hover,
+.tabla > div > div:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(18, 70px);
+    grid-template-rows: repeat(9, 88px);
+    gap: 6px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 24px auto;
+    overflow-x: auto;
+}
+
+.tabla > div {
+    display: contents;
+}
+
+.tabla > div > div {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 14px;
+}
+.tabla .actinidos > div {
+    background-color: rgb(195, 170, 7);
+}
+
+.tabla .alcalinos > div {
+    background-color: rgb(181, 12, 153);
+}
+
+.tabla .lantanidos > div {
+    background-color: rgb(22, 30, 56);
+}
+
+.tabla .gasesnobles > div {
+    background-color: rgb(17, 160, 4);
+}
+
+.tabla .halogenos > div {
+    background-color: rgb(6, 151, 229);
+}
+
+
+.tabla .nometales > div {
+    background-color: rgb(42, 167, 65);
+}
+
+.tabla .metaloides > div {
+    background-color: rgb(195, 103, 11);
+}
+
+.tabla .metalesp > div {
+    background-color: rgb(123, 7, 195);
+}
+
+.tabla .metalesdtransi > div {
+    background-color: rgb(216, 21, 54);
+}
+
+.tabla .alcalinoterreos > div {
+    background-color: rgb(5, 34, 140);
+}
+
+.tabla p,
+.tabla h1 {
+    margin: 2px 0;
+    font-size: 1em;
+}
+
+.hidrogeno { grid-area: 1 / 1; }
+.helio { grid-area: 1 / 18; }
+
+.litio { grid-area: 2 / 1; }
+.berilio { grid-area: 2 / 2; }
+.boro { grid-area: 2 / 13; }
+.carbono { grid-area: 2 / 14; }
+.nitrogeno { grid-area: 2 / 15; }
+.oxigeno { grid-area: 2 / 16; }
+.fluor { grid-area: 2 / 17; }
+.neon { grid-area: 2 / 18; }
+
+.sodio { grid-area: 3 / 1; }
+.magnesio { grid-area: 3 / 2; }
+.aluminio { grid-area: 3 / 13; }
+.silicio { grid-area: 3 / 14; }
+.fosforo { grid-area: 3 / 15; }
+.azufre { grid-area: 3 / 16; }
+.cloro { grid-area: 3 / 17; }
+.argon { grid-area: 3 / 18; }
+
+.potasio { grid-area: 4 / 1; }
+.calcio { grid-area: 4 / 2; }
+.escandio { grid-area: 4 / 3; }
+.titanio { grid-area: 4 / 4; }
+.vanadio { grid-area: 4 / 5; }
+.cromo { grid-area: 4 / 6; }
+.manganeso { grid-area: 4 / 7; }
+.hierro { grid-area: 4 / 8; }
+.cobalto { grid-area: 4 / 9; }
+.niquel { grid-area: 4 / 10; }
+.cobre { grid-area: 4 / 11; }
+.zinc { grid-area: 4 / 12; }
+.galio { grid-area: 4 / 13; }
+.germanio { grid-area: 4 / 14; }
+.arsenico { grid-area: 4 / 15; }
+.selenio { grid-area: 4 / 16; }
+.bromo { grid-area: 4 / 17; }
+.kripton { grid-area: 4 / 18; }
+
+.rubidio { grid-area: 5 / 1; }
+.estroncio { grid-area: 5 / 2; }
+.itrio { grid-area: 5 / 3; }
+.circonio { grid-area: 5 / 4; }
+.niobio { grid-area: 5 / 5; }
+.molibdeno { grid-area: 5 / 6; }
+.tecnecio { grid-area: 5 / 7; }
+.rutenio { grid-area: 5 / 8; }
+.rodio { grid-area: 5 / 9; }
+.paladio { grid-area: 5 / 10; }
+.plata { grid-area: 5 / 11; }
+.cadmio { grid-area: 5 / 12; }
+.indio { grid-area: 5 / 13; }
+.estaño { grid-area: 5 / 14; }
+.antimonio { grid-area: 5 / 15; }
+.telurio { grid-area: 5 / 16; }
+.yodo { grid-area: 5 / 17; }
+.xenon { grid-area: 5 / 18; }
+
+.cesio { grid-area: 6 / 1; }
+.bario { grid-area: 6 / 2; }
+.lantano { grid-area: 6 / 3; }
+.hafnio { grid-area: 6 / 4; }
+.tantalo { grid-area: 6 / 5; }
+.wolframio { grid-area: 6 / 6; }
+.renio { grid-area: 6 / 7; }
+.osmio { grid-area: 6 / 8; }
+.iridio { grid-area: 6 / 9; }
+.platino { grid-area: 6 / 10; }
+.oro { grid-area: 6 / 11; }
+.mercurio { grid-area: 6 / 12; }
+.talio { grid-area: 6 / 13; }
+.plomo { grid-area: 6 / 14; }
+.bismuto { grid-area: 6 / 15; }
+.polonio { grid-area: 6 / 16; }
+.astato { grid-area: 6 / 17; }
+.radon { grid-area: 6 / 18; }
+
+.francio { grid-area: 7 / 1; }
+.radio { grid-area: 7 / 2; }
+.actinio { grid-area: 7 / 3; }
+.rutherfordio { grid-area: 7 / 4; }
+.dubnio { grid-area: 7 / 5; }
+.seaborgio { grid-area: 7 / 6; }
+.bohrio { grid-area: 7 / 7; }
+.hasio { grid-area: 7 / 8; }
+.meitnerio { grid-area: 7 / 9; }
+.darmstatio { grid-area: 7 / 10; }
+.roentgenio { grid-area: 7 / 11; }
+.copernicio { grid-area: 7 / 12; }
+.nihonio { grid-area: 7 / 13; }
+.flerovio { grid-area: 7 / 14; }
+.moscovio { grid-area: 7 / 15; }
+.livermorio { grid-area: 7 / 16; }
+.teneso { grid-area: 7 / 17; }
+.ognaneson { grid-area: 7 / 18; }
+
+.cerio { grid-area: 8 / 4; }
+.praseodimio { grid-area: 8 / 5; }
+.neodimio { grid-area: 8 / 6; }
+.prometio { grid-area: 8 / 7; }
+.samario { grid-area: 8 / 8; }
+.europio { grid-area: 8 / 9; }
+.gadolinio { grid-area: 8 / 10; }
+.terbio { grid-area: 8 / 11; }
+.disprosio { grid-area: 8 / 12; }
+.holmio { grid-area: 8 / 13; }
+.erbio { grid-area: 8 / 14; }
+.tulio { grid-area: 8 / 15; }
+.iterbio { grid-area: 8 / 16; }
+.lutecio { grid-area: 8 / 17; }
+
+.torio { grid-area: 9 / 4; }
+.protactinio { grid-area: 9 / 5; }
+.uranio { grid-area: 9 / 6; }
+.neptunio { grid-area: 9 / 7; }
+.plutonio { grid-area: 9 / 8; }
+.americio { grid-area: 9 / 9; }
+.curio { grid-area: 9 / 10; }
+.berkelio { grid-area: 9 / 11; }
+.californio { grid-area: 9 / 12; }
+.einstenio { grid-area: 9 / 13; }
+.fermio { grid-area: 9 / 14; }
+.mendelevio { grid-area: 9 / 15; }
+.nobelio { grid-area: 9 / 16; }
+.lawrencio { grid-area: 9 / 17; }
+
+.element-tooltip {
+    position: fixed;
+    z-index: 100;
+    box-sizing: border-box;
+    width: 250px;
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease;
+}
+
+.element-tooltip.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.element-tooltip .element-tooltip__image {
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.element-tooltip p,
+.element-tooltip h2 {
+    margin: 4px 0;
+    overflow-wrap: anywhere;
+}
+
+.element-tooltip .element-tooltip__symbol {
+    font-size: 1.5em;
+}
+
+.element-tooltip__details {
+    text-align: left;
+    font-size: 12px;
+}
+
+.element-tooltip__configuration {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding-top: 6px;
+}
